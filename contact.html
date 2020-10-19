@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  <title>Contact Me - Code First Girls Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Portfolio</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./top-five.html">My Top 5</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Contact Me <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="jumbotron jumbotron-fluid bg-white text-center">
+      <h1>Contact Me</h1>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form id="contactMeForm">
+            <div class="form-group row">
+              <label for="f_name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input name="f_name" placeholder="Name..." class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="f_topic" class="col-sm-2 col-form-label">Topic</label>
+              <div class="col-sm-10">
+                <input name="f_topic" placeholder="Topic..." class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="f_message" class="col-sm-2 col-form-label">Message</label>
+              <div class="col-sm-10">
+                <textarea name="f_message" placeholder="Message..." class="form-control"></textarea>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-primary"/>
+          </form>
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Message you sent:</p>
+
+          <div id="nameDiv">
+            <p><b>Name:</b></p>
+          </div>
+
+          <div id="topicDiv">
+            <p><b>Topic:</b></p>
+          </div>
+
+          <div id="messageDiv">
+            <p><b>Message:</b></p>
+          </div>
+
+          <p>Thank you for sending your message, I will respond soon!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          Copyright 2020 -
+          <a href="https://www.codefirstgirls.org.uk/" target="_blank">CFG</a>
+        </div>
+
+        <div class="col-md-6">
+          <span>Connect with me on <a href="https://www.linkedin.com/in/kristofer-box/ target="
+              _blank">LinkedIn</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./js/contact.js"></script>
+
+</body>
+
+</html>
